@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>Club Register Form</title>
+  <style type="text/css">
+  *{
+   margin:0;
+   padding:0;
+     }
+   body{
+   	background-image:url(camp_nou.jpg);
+   	background-repeat: no-repeat;
+   	background-attachment: fixed;
+   	background-position:center;
+   	background-size:cover;
+   	font-family:sans-serif;
+   	margin-top:40px;
+   	}
+   .clubf{
+   		width:800px;
+   		background-color:rgb(0,0,0,0.6);
+   		margin:auto;
+   		color:#FFFFFF;
+   		padding:10px 0px 10px 0px;
+   		text-align:center;
+   		border-radius:15px 15px 0px 0px;
+   		}
+   .main{
+   background-color:rgb(0,0,0,0.5);
+   width:800px;
+   margin:auto;
+   }
+   form{
+   	padding:10px;
+   	}
+   #name{
+   	width:100%;
+   	height:70px;
+   }
+   .name{
+   	margin-left:25px;
+   	margin-top:30px;
+   	width:125px;
+   	color:white;
+   	font-size:18px;
+   	font-weight:700;
+   }
+   .namelabel{
+   	position:relative;
+   	left:100px;
+   	line-height:40px;
+   	border-radius:6px
+   	
+   }
+
+   .manager{
+   	position:relative;
+   	left:100px;
+   	line-height:40px;
+   	border-radius:6px
+   }
+
+   .homeground{
+   	position:relative;
+   	left:100px;
+   	line-height:40px;
+   	border-radius:6px
+   }
+   
+   	
+   .clubs{
+   		width:800px;
+   		background-color:rgb(0,0,0,0.6);
+   		margin:auto;
+   		color:#FFFFFF;
+   		padding:10px 0px 10px 0px;
+   		text-align:center;
+   		border-radius:15px 15px 0px 0px;
+   		}
+   .main2{
+   background-color:rgb(0,0,0,0.5);
+   width:800px;
+   margin:auto;
+   }
+   form{
+   	padding:10px;
+   	}
+   #name2{
+   	width:100%;
+   	height:70px;
+   }
+   .name2{
+   	margin-left:25px;
+   	margin-top:30px;
+   	width:125px;
+   	color:white;
+   	font-size:18px;
+   	font-weight:700;
+   }
+   .winlabel{
+   	position:relative;
+   	left:109px;
+   	line-height:40px;
+   	border-radius:6px
+   	
+   	
+   }
+
+   .totallosses{
+   	position:relative;
+   	left:109px;
+   	line-height:40px;
+   	border-radius:6px
+   }
+
+   .wins{
+   	position:relative;
+   	left:109px;
+   	line-height:40px;
+   	border-radius:6px
+   
+   }	
+   	
+   	
+   	
+   	
+   	
+   	
+   	
+   	
+   </style>
+</head>
+<body>
+    <div class="clubf"><h1><center>Club Info</center></h1></div>
+    <div class="main">
+
+ <form action="ci.php" method="POST">
+  <div id="name2">
+    </div><table>
+   <tbody><tr>
+    <td class="name">Name </td>
+    <td><input class="namelabel" type="text" name="name" required=""></td>
+   
+   </tr>
+   <tr>
+    <td class="name">Manager Name </td>
+    <td><input class="manager" type="text" name="manager" required=""></td>
+   </tr>
+   <tr>
+    <td class="name">Homeground </td>
+    <td><input class="homeground" type="text" name="ground" required=""></td>
+   </tr>
+   
+</tbody></table>
+</div>
+<br>
+<br>
+
+<div class="clubs"><h1><center>Club Stats</center></h1></div>
+<div class="main2">
+<div id="name2">
+        </div><table>
+    <tbody><tr>
+    	<td class="name2">Total Wins </td>
+        <td><input class="winlabel" type="number" name="win" required=""></td>
+        
+       </tr>
+    <tr>
+        <td class="name2">Total Losses </td>
+        <td><input class="totallosses" type="number" name="loss" required=""></td>
+       </tr>
+    <tr>
+        <td class="name2">Wins at Home </td>
+        <td><input class="wins" type="number" lessthan="$wins" name="wah" required=""></td>
+       </tr>
+       
+</tbody></table>
+
+<br>
+<center><input type="submit" value="Submit"></center>
+
+</div>
+
+
+</form>
+
+<br>
+<br>
+<a style="color:pink" href="start.html ">Home</a><br>
+</body></html>
